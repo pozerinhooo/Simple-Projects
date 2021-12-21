@@ -13,20 +13,26 @@ public class Calculator implements ActionListener {
     JButton decButton, equButton, delButton, clrButton, negButton;
     JPanel panel;
     JTextField textField;
-    double num1 = 0, num2 = 0, result = 0;
+
+    double num1 = 0, num2 = 0;
     char operator;
     public Calculator() {
+        ImageIcon imageIcon = new ImageIcon("C:\\Users\\jkobm\\OneDrive\\Dokumenty\\calc.jpg");
+
+
         Font myFont = new Font("Ink Free", Font.BOLD, 30);
         JFrame frame = new JFrame("Calculator");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420, 550);
         frame.setLayout(null);
-
+        frame.setIconImage(imageIcon.getImage());
 
         textField = new JTextField();
         textField.setBounds(50, 25, 300, 50);
         textField.setFont(myFont);
         frame.add(textField);
+       
+
 
 
 
@@ -173,7 +179,7 @@ public class Calculator implements ActionListener {
         }
         if (e.getSource() == negButton) {
             double newNegValue = Double.parseDouble(textField.getText());
-            textField.setText(String.valueOf((-1)*newNegValue)); 
+            textField.setText(String.valueOf((-1)*newNegValue));
         }
     }
 }
