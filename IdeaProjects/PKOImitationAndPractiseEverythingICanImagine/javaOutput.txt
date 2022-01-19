@@ -1,0 +1,6 @@
+Key --> Norway	Value --> Oslo
+Key --> Poland	Value --> Warsaw
+Key --> France	Value --> Paris
+Key --> Sweeden	Value --> Gotenburg
+Key --> Germany	Value --> Berlin
+Key --> Russia	Value --> Moskow
